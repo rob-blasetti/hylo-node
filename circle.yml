@@ -3,12 +3,13 @@ machine:
     version: 6.2.2
 deployment:
   production:
-    branch: master
+    branch: circle-ci
     heroku:
-      appname: hylo-node
+      appname: hylo-node-hitfin
 general:
   artifacts:
     - "coverage"
   branches:
     only:
       - master
+      - circle-ci
